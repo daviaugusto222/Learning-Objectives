@@ -1,23 +1,26 @@
 //360 Enum Syntax
 //Enums definem um grupo de valores
-enum Result {
-  case success
-  case failure
+enum Game {
+  case LeagueOfLegends
+  case Terraria
+  case Starbound
+  case Fortnite
 }
 
 //Para acessar valores deve se utilizar do enum, ponto e seguido do nome do caso
-let result1 = Result.success
+let jogar = Game.LeagueOfLegends
 
 //361 Enum with switch
 //switch é usando quando se precisa testar casos e executar algo quando um dos casos for selecionado
-switch result1 {
-  case .success:
-    print("Sucesso!")
-  case .failure:
-    print("Falhou!")
-    fallthrough //Usado quando é necessário continuar para testar outros casos
-  default: //switch sempre deve ser exaustivo 
-    print("Tente novamente!")
+switch jogar {
+  case .LeagueOfLegends:
+    print("Você está jogando LoL, sai do ferro!")
+  case .Terraria:
+    print("Você está jogando Terraria, não vai pro hell!")
+  case .Starbound:
+    print("Você está jogando Starbound, cuidado!")
+  case .Fortnite:
+    print("Você está jogando Fortnite, olha a bazuca!")
 }
 
 let letra = "a"
