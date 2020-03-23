@@ -1,5 +1,3 @@
-
-
 enum Game {
   case LeagueOfLegends
   case Terraria
