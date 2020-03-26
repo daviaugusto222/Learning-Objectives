@@ -30,5 +30,3 @@ if let pokemonNum = PokemonBusca(rawValue:7) {
   print(pokemonNum)
 }
 
-//365	Enum | Recursive enumerations
-
