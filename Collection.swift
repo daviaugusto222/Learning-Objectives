@@ -17,8 +17,11 @@ if inteiros.isEmpty {
   print("O array está vazio")
 }
 //a propriedade .append adiciona valores no final do array
-inteiros.append(100)
+inteiros.append(1)
+inteiros.append(2)
 inteiros.append(3)
+inteiros.append(4)
+inteiros.append(5)
 print(inteiros) 
 //para acessar um determinado valor pelo sei index usa-se a notação [index] logo após o nome do array
 let primeiroNum = inteiros[0]
@@ -32,9 +35,16 @@ print(inteiros)
 let valorRemovido = inteiros.remove(at: 0)
 print(inteiros)
 //o .removelast() remove o ultimo item do array. Também retorna o item removido
-inteiros.removelast()
+let ultimo = inteiros.removeLast()
 
 //346	Iterating array
+//O for - in pode ser usado para interar no array.
+//Se desejar saber o index do array usar a propriedade .enumerated que retorna uma tupla
+for (index, numero) in inteiros.enumerated() {
+  print("index \(index) : Numero \(numero)")
+}
+
+
 //347	Set
 //348	Accessing set
 //349	Iterating set
@@ -43,3 +53,4 @@ inteiros.removelast()
 //352	Accessing dictionary
 //353	Iterating dictionary
 //354	Set operations
+
